@@ -95,3 +95,23 @@ print(data)
 # update()
 # values()
 
+
+
+# from collections.abc import MutableMapping
+
+# def flatten_dict(d: MutableMapping, parent_key: str = '', sep: str ='.') -> MutableMapping:
+#     items = []
+#     for k, v in d.items():
+#         new_key = parent_key + sep + k if parent_key else k
+#         if isinstance(v, MutableMapping):
+#             items.extend(flatten_dict(v, new_key, sep=sep).items())
+#         else:
+#             items.append((new_key, v))
+#     return dict(items)
+
+
+# >>> flatten_dict({'a': 1, 'c': {'a': 2, 'b': {'x': 3, 'y': 4, 'z': 5}}, 'd': [6, 7, 8]})
+# {'a': 1, 'c.a': 2, 'c.b.x': 3, 'c.b.y': 4, 'c.b.z': 5, 'd': [6, 7, 8]}
+
+
+
